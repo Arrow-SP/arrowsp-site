@@ -17,6 +17,7 @@ body {
 }
 
 
+
 .container {
 
     width: 90%;
@@ -37,12 +38,13 @@ header {
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(10px);
     position: fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-    padding:22px 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 22px 0;
 
 }
+
 
 
 .navbar {
@@ -54,11 +56,13 @@ header {
 }
 
 
+
 .logo {
 
     width:150px;
 
 }
+
 
 
 nav {
@@ -67,6 +71,7 @@ nav {
     gap:35px;
 
 }
+
 
 
 nav a {
@@ -80,6 +85,7 @@ nav a {
 }
 
 
+
 nav a:hover {
 
     opacity:.6;
@@ -89,61 +95,18 @@ nav a:hover {
 
 
 
+
 /* =========================
-HERO
+HERO PREMIUM
 ========================= */
 
 
 .hero {
 
     min-height:100vh;
-    position:relative;
+    padding-top:90px;
     display:flex;
     align-items:center;
-    overflow:hidden;
-
-}
-
-
-.hero::before {
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background-image:url("assets/imagens/hero.png");
-
-    background-size:cover;
-
-    background-position:center;
-
-    z-index:0;
-
-}
-
-
-/* degradê premium */
-
-.hero::after {
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(7,18,35,0.95) 0%,
-        rgba(7,18,35,0.80) 35%,
-        rgba(7,18,35,0.45) 65%,
-        rgba(7,18,35,0.15) 100%
-    );
-
-    z-index:1;
 
 }
 
@@ -151,15 +114,49 @@ HERO
 
 .hero-content {
 
+    width:100%;
+    max-width:1400px;
+    margin:auto;
     position:relative;
 
-    z-index:2;
+}
 
-    width:90%;
 
-    max-width:1200px;
 
-    margin:auto;
+.hero-image {
+
+    width:100%;
+    height:650px;
+    position:relative;
+
+}
+
+
+
+.hero-image img {
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:0;
+
+}
+
+
+
+.hero-image::after {
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.78) 0%,
+        rgba(0,0,0,0.55) 40%,
+        rgba(0,0,0,0.15) 100%
+    );
 
 }
 
@@ -167,9 +164,15 @@ HERO
 
 .hero-text {
 
-    max-width:650px;
+    position:absolute;
+    z-index:2;
 
-    padding-top:70px;
+    width:550px;
+
+    left:8%;
+    top:50%;
+
+    transform:translateY(-50%);
 
 }
 
@@ -179,15 +182,15 @@ HERO
 
     color:#ffffff;
 
-    font-size:62px;
+    font-size:58px;
 
-    line-height:1.08;
+    line-height:1.12;
 
     font-weight:700;
 
-    letter-spacing:-2px;
+    letter-spacing:-1.5px;
 
-    margin-bottom:28px;
+    margin-bottom:25px;
 
 }
 
@@ -195,13 +198,11 @@ HERO
 
 .hero-text p {
 
-    color:rgba(255,255,255,.9);
+    color:rgba(255,255,255,.85);
 
-    font-size:21px;
+    font-size:20px;
 
     line-height:1.6;
-
-    max-width:540px;
 
     margin-bottom:35px;
 
@@ -209,13 +210,11 @@ HERO
 
 
 
-/* botão */
-
-.hero-text button {
+button {
 
     background:#ffffff;
 
-    color:#111;
+    color:#111111;
 
     border:none;
 
@@ -234,7 +233,8 @@ HERO
 }
 
 
-.hero-text button:hover {
+
+button:hover {
 
     transform:translateY(-3px);
 
@@ -256,6 +256,7 @@ SEÇÕES
 }
 
 
+
 .section h2 {
 
     text-align:center;
@@ -265,6 +266,7 @@ SEÇÕES
     margin-bottom:30px;
 
 }
+
 
 
 .section p {
@@ -312,7 +314,7 @@ CARDS
 
 .card {
 
-    background:#fff;
+    background:#ffffff;
 
     padding:40px 35px;
 
@@ -368,11 +370,13 @@ CONTATO
 }
 
 
+
 .contact button {
 
     margin-top:30px;
 
 }
+
 
 
 
@@ -413,95 +417,44 @@ nav {
 }
 
 
-.hero {
 
-    min-height:90vh;
+.hero-image {
 
-}
-
-
-.hero::before {
-
-    background-position:center;
+    height:600px;
 
 }
+
 
 
 .hero-text {
 
-    max-width:90%;
+    width:80%;
 
-    padding-top:60px;
+    left:10%;
 
 }
+
 
 
 .hero-text h1 {
 
-    font-size:42px;
+    font-size:38px;
 
 }
+
 
 
 .hero-text p {
 
-    font-size:18px;
+    font-size:17px;
 
 }
+
 
 
 .cards {
 
     flex-direction:column;
-
-}
-
-
-}
-
-
-
-@media(max-width:600px){
-
-
-.hero {
-
-    min-height:100vh;
-
-}
-
-
-.hero::after {
-
-    background:
-    linear-gradient(
-        180deg,
-        rgba(7,18,35,.75),
-        rgba(7,18,35,.95)
-    );
-
-}
-
-
-.hero-text {
-
-    max-width:100%;
-
-}
-
-
-.hero-text h1 {
-
-    font-size:34px;
-
-    letter-spacing:-1px;
-
-}
-
-
-.hero-text p {
-
-    font-size:16px;
 
 }
 
