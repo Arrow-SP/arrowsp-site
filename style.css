@@ -569,3 +569,212 @@ nav {
 
 
 }
+/* =========================
+AUTORIDADE / NÚMEROS
+========================= */
+
+
+.autoridade {
+
+    background:#ffffff;
+
+}
+
+
+.numeros {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+
+
+.numero {
+
+    text-align:center;
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    background:#f7f7f7;
+
+    transition:.3s;
+
+}
+
+
+
+.numero:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.numero h3 {
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:15px;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+.numero p {
+
+    font-size:15px;
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* =========================
+MERCADOS
+========================= */
+
+
+.mercados {
+
+    background:#111;
+
+}
+
+
+
+.mercados h2 {
+
+    color:white;
+
+}
+
+
+
+.mercados .card {
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.mercados .card h3 {
+
+    color:white;
+
+}
+
+
+
+.mercados .card p {
+
+    color:#bdbdbd;
+
+}
+
+
+
+
+
+/* =========================
+WHATSAPP FLUTUANTE
+========================= */
+
+
+.whatsapp {
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    z-index:2000;
+
+
+    background:#111;
+
+    color:white;
+
+    text-decoration:none;
+
+
+    padding:16px 25px;
+
+
+    border-radius:50px;
+
+
+    font-size:14px;
+
+    font-weight:600;
+
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+}
+
+
+
+.whatsapp:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* =========================
+RESPONSIVO
+========================= */
+
+
+@media(max-width:900px){
+
+
+.numeros {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.whatsapp {
+
+    right:20px;
+
+    bottom:20px;
+
+}
+
+
+
+}
