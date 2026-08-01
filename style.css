@@ -778,3 +778,47 @@ RESPONSIVO
 
 
 }
+/* =========================
+MERCADOS - GRID 4 CARDS
+========================= */
+
+
+.mercados .cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+}
+
+
+
+.mercados .card {
+
+    min-height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+
+.mercados .cards {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
