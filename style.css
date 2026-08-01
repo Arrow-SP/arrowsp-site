@@ -822,3 +822,153 @@ MERCADOS - GRID 4 CARDS
 
 
 }
+/* =========================
+MÉTODO CONSULTIVO
+========================= */
+
+
+.metodo {
+
+    background:#ffffff;
+
+}
+
+
+
+.intro-metodo {
+
+    max-width:800px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+
+
+.etapas {
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.etapa {
+
+    position:relative;
+
+    padding:35px 25px;
+
+    background:#f7f7f7;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+
+
+.etapa:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.etapa span {
+
+    display:block;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#d8d8d8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.etapa h3 {
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.etapa p {
+
+    text-align:left;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.etapas {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+/* =========================
+ANIMAÇÕES
+========================= */
+
+
+.card,
+.etapa,
+.numero {
+
+    animation: aparecer .6s ease forwards;
+
+}
+
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
