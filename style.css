@@ -11,18 +11,20 @@ html {
 
 
 body {
+
     font-family: 'Inter', sans-serif;
-    color: #1b1b1b;
-    background: #ffffff;
+    color:#1b1b1b;
+    background:#ffffff;
+
 }
 
 
 
 .container {
 
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 
 }
 
@@ -35,13 +37,17 @@ HEADER
 
 header {
 
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 22px 0;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    position:fixed;
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:22px 0;
 
 }
 
@@ -78,12 +84,13 @@ nav a {
 
     text-decoration:none;
     color:#222;
+
     font-size:14px;
     font-weight:500;
+
     transition:.3s;
 
 }
-
 
 
 nav a:hover {
@@ -97,14 +104,16 @@ nav a:hover {
 
 
 /* =========================
-HERO PREMIUM
+HERO
 ========================= */
 
 
 .hero {
 
     min-height:100vh;
+
     padding-top:90px;
+
     display:flex;
     align-items:center;
 
@@ -116,7 +125,9 @@ HERO PREMIUM
 
     width:100%;
     max-width:1400px;
+
     margin:auto;
+
     position:relative;
 
 }
@@ -127,6 +138,7 @@ HERO PREMIUM
 
     width:100%;
     height:650px;
+
     position:relative;
 
 }
@@ -137,8 +149,8 @@ HERO PREMIUM
 
     width:100%;
     height:100%;
+
     object-fit:cover;
-    border-radius:0;
 
 }
 
@@ -147,15 +159,16 @@ HERO PREMIUM
 .hero-image::after {
 
     content:"";
+
     position:absolute;
     inset:0;
 
     background:
     linear-gradient(
         90deg,
-        rgba(0,0,0,0.78) 0%,
-        rgba(0,0,0,0.55) 40%,
-        rgba(0,0,0,0.15) 100%
+        rgba(0,0,0,.82) 0%,
+        rgba(0,0,0,.55) 45%,
+        rgba(0,0,0,.15) 100%
     );
 
 }
@@ -165,11 +178,13 @@ HERO PREMIUM
 .hero-text {
 
     position:absolute;
+
     z-index:2;
 
-    width:550px;
+    width:560px;
 
     left:8%;
+
     top:50%;
 
     transform:translateY(-50%);
@@ -180,7 +195,7 @@ HERO PREMIUM
 
 .hero-text h1 {
 
-    color:#ffffff;
+    color:white;
 
     font-size:58px;
 
@@ -214,7 +229,7 @@ button {
 
     background:#ffffff;
 
-    color:#111111;
+    color:#111;
 
     border:none;
 
@@ -233,12 +248,12 @@ button {
 }
 
 
-
 button:hover {
 
     transform:translateY(-3px);
 
 }
+
 
 
 
@@ -251,7 +266,7 @@ SEÇÕES
 
 .section {
 
-    padding:100px 0;
+    padding:110px 0;
 
 }
 
@@ -261,42 +276,50 @@ SEÇÕES
 
     text-align:center;
 
-    font-size:38px;
+    font-size:40px;
 
-    margin-bottom:30px;
+    font-weight:700;
+
+    margin-bottom:45px;
+
+    letter-spacing:-1px;
 
 }
 
 
 
-.section p {
+.section > .container > p {
 
-    max-width:800px;
+    max-width:850px;
 
     margin:auto;
 
     text-align:center;
 
-    line-height:1.8;
-
     color:#555;
 
+    line-height:1.9;
+
+    font-size:18px;
+
 }
+
 
 
 
 .background {
 
-    background:#f7f7f7;
+    background:#f6f7f9;
 
 }
+
 
 
 
 
 
 /* =========================
-CARDS
+CARDS PREMIUM
 ========================= */
 
 
@@ -314,17 +337,20 @@ CARDS
 
 .card {
 
-    background:#ffffff;
+    background:white;
 
-    padding:40px 35px;
+    padding:42px 35px;
 
-    border-radius:18px;
+    border-radius:20px;
 
     flex:1;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    border:1px solid #eeeeee;
 
-    transition:.3s;
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.06);
+
+    transition:.35s;
 
 }
 
@@ -332,7 +358,7 @@ CARDS
 
 .card:hover {
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
 }
 
@@ -342,7 +368,7 @@ CARDS
 
     font-size:22px;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
 
 }
 
@@ -350,9 +376,64 @@ CARDS
 
 .card p {
 
-    text-align:left;
+    color:#666;
+
+    line-height:1.7;
 
 }
+
+
+
+
+
+
+
+/* =========================
+DIFERENCIAIS
+========================= */
+
+
+.diferenciais {
+
+    background:#111;
+
+}
+
+
+
+.diferenciais h2 {
+
+    color:white;
+
+}
+
+
+
+.diferenciais .card {
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.diferenciais .card h3 {
+
+    color:white;
+
+}
+
+
+
+.diferenciais .card p {
+
+    color:#bbb;
+
+}
+
+
 
 
 
@@ -367,15 +448,31 @@ CONTATO
 
     text-align:center;
 
+    background:#f7f7f7;
+
+}
+
+
+
+.contact h2 {
+
+    margin-bottom:25px;
+
 }
 
 
 
 .contact button {
 
-    margin-top:30px;
+    margin-top:35px;
+
+    background:#111;
+
+    color:white;
 
 }
+
+
 
 
 
@@ -388,15 +485,18 @@ FOOTER
 
 footer {
 
-    background:#111;
+    background:#0b0b0b;
 
     color:white;
 
     text-align:center;
 
-    padding:25px;
+    padding:30px;
+
+    font-size:14px;
 
 }
+
 
 
 
@@ -457,6 +557,15 @@ nav {
     flex-direction:column;
 
 }
+
+
+
+.section h2 {
+
+    font-size:32px;
+
+}
+
 
 
 }
