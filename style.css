@@ -1001,12 +1001,14 @@ ICONS PREMIUM
 
 .card-icon{
 
-    width:72px;
-    height:72px;
+    width:64px;
+    height:64px;
 
-    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
 
-    background:#f5f6f8;
+    border-radius:18px;
+
+    background:#252525;
 
     display:flex;
 
@@ -1015,9 +1017,46 @@ ICONS PREMIUM
 
     margin-bottom:28px;
 
-    transition:
-    background .35s ease,
-    transform .35s ease;
+    transition:.35s;
+
+}
+
+
+
+.card-icon svg{
+
+    width:28px;
+    height:28px;
+
+    stroke:#d7b16d;
+
+    stroke-width:1.8;
+
+    fill:none;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+    transition:.35s;
+
+}
+
+
+
+.card:hover .card-icon{
+
+    background:#d7b16d;
+
+    border-color:#d7b16d;
+
+}
+
+
+
+.card:hover .card-icon svg{
+
+    stroke:#111111;
 
 }
 
