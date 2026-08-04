@@ -995,27 +995,46 @@ MOVIMENTO DOS CARDS
 CARD ICON
 ========================= */
 
+/* =========================
+ICONS PREMIUM
+========================= */
+
 .card-icon{
 
-    width:64px;
+    width:72px;
+    height:72px;
 
-    height:64px;
+    border-radius:20px;
 
-    border-radius:18px;
-
-    background:#f2f2f2;
+    background:#f5f6f8;
 
     display:flex;
 
+    justify-content:center;
     align-items:center;
 
-    justify-content:center;
-
-    font-size:28px;
-
-    font-weight:700;
-
     margin-bottom:28px;
+
+    transition:
+    background .35s ease,
+    transform .35s ease;
+
+}
+
+.card-icon svg{
+
+    width:34px;
+    height:34px;
+
+    stroke:#111;
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+    fill:none;
 
     transition:.35s;
 
@@ -1023,23 +1042,32 @@ CARD ICON
 
 .card:hover .card-icon{
 
-    transform:rotate(8deg) scale(1.08);
-
     background:#111;
 
-    color:white;
+    transform:translateY(-4px);
+
+}
+
+.card:hover .card-icon svg{
+
+    stroke:white;
 
 }
 
 
-/* versões escuras */
+/* cartões escuros */
 
 .mercados .card-icon,
 .diferenciais .card-icon{
 
     background:rgba(255,255,255,.08);
 
-    color:white;
+}
+
+.mercados .card-icon svg,
+.diferenciais .card-icon svg{
+
+    stroke:white;
 
 }
 
@@ -1048,7 +1076,12 @@ CARD ICON
 
     background:white;
 
-    color:#111;
+}
+
+.mercados .card:hover .card-icon svg,
+.diferenciais .card:hover .card-icon svg{
+
+    stroke:#111;
 
 }
 /* =========================
