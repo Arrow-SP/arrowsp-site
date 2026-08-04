@@ -1029,10 +1029,10 @@ ICONS PREMIUM
 
 .card-icon svg{
 
-    width:28px;
-    height:28px;
+    width:30px;
+    height:30px;
 
-    stroke:#d7b16d;
+    stroke:#111;
 
     stroke-width:1.8;
 
@@ -1041,8 +1041,6 @@ ICONS PREMIUM
     stroke-linecap:round;
 
     stroke-linejoin:round;
-
-    transition:.35s;
 
 }
 
@@ -1060,7 +1058,7 @@ ICONS PREMIUM
 
 .card:hover .card-icon svg{
 
-    stroke:#111111;
+    stroke:#ffffff;
 
 }
 
